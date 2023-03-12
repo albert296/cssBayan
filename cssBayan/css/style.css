@@ -262,3 +262,51 @@ footer{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
 }
+
+/* ===images=== */
+
+.img-mem{
+    padding: 10px 0;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:all 2s ease-out;
+}
+
+.img-mem:hover{
+    transform: scale(1.02);
+}
+
+
+/* ===media=== */
+/* @media screen and (max-width: 1920){
+    .bayan{
+        display: block;
+    }
+
+    .img-mem{
+        display: block;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 820){
+    .img-mem{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 320){
+    .bayan{
+        display: block;
+    }
+
+    .img-mem{
+        display: block;
+        margin: auto;
+    }
+} */
