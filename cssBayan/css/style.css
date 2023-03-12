@@ -181,3 +181,84 @@ footer{
     height: 80px;
     background-color: #D6E4E5;
 }
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === Bayan === */
+
+.bayan{
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.bayan-item{
+    border-top: 1px solid #EB6440;
+}
+
+.bayan-title{
+    display:block;
+    padding: 10px 15px;
+    position: relative;
+    font-size: 17px;
+    cursor: pointer;
+    color: #497174;
+    transition: color .3s ease-out;
+}
+
+.bayan-title::after{
+    content: "";
+    display:block;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 7.5px 0 7.5px;
+    border-color: #497174 transparent transparent transparent;
+
+    position: absolute;
+    top: 50%;
+    right: 15px;
+
+    transform: translateY(-50%);
+    
+}
+
+.bayan-title:hover{
+    color: #EB6440;
+}
+
+
+.bayan-input{
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.bayan-input:hover ~ .bayan-content{
+    display: block;
+    transition: all .5 ease-out;
+}
+
+.bayan-input:checked ~ .bayan-content{
+    display: block;
+}
+
+.bayan-input:checked ~ .bayan-title::after{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7.5px 15px 7.5px;
+    border-color: transparent transparent #EB6440 transparent;
+}
+
+.bayan-content{
+    display: none;
+    padding: 10px 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
