@@ -173,20 +173,6 @@ section{
     text-align: center;
 }
 
-.developing{
-    margin: auto;
-    width: 500px;
-    height: 500px;
-    background: url(in_developing.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.text-dev{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    color: #497174;
-}
 
 footer{
     position: absolute;
